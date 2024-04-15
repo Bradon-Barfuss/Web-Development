@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- this is used for because Lorem apparently could have errors when using lang="en" according to validator.w3.org -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thoughtful</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        header p#title {
+            font-family: 'Oswald';
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: Oswald;
+            font-size: 72px;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-family: Oswald;
+            font-size: 19px;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .inlineGrey {
+            display: inline;
+            color: grey;
+        }
+
+        body>header {
+            text-align: center;
+        }
+
+        nav {
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+
+        nav ol {
+            list-style: none;
+        }
+
+        nav ol li {
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        nav ol li a {
+            text-decoration: none;
+            color: skyblue;
+        }
+
+        dt {
+            color: grey;
+            font-weight: bold;
+            padding-top: 1px;
+            padding-bottom: 4px;
+        }
+
+        ul li {
+            padding-bottom: 5px;
+        }
+
+
+        a {
+            color: skyblue;
+        }
+        /*Need to remove an extra bullet because the validator says you need to have a nested list item instead of a "<li>" like <ul> 
+            <li>
+                <ol>
+        can't do 
+        <ul>
+            <ol>,
+            so we need to remove the extra bullet point that comes up because of the extra li.*/
+        ul li.last { 
+            list-style: none;
+        }
+
+        .sectionleft {
+            border-right: 1px solid grey;
+            margin-right: 25%;
+            padding-right: 20px;
+            margin-bottom: 40px;
+        }
+
+        .articleleft {
+            margin-top: 15px;
+        }
+
+        .sectionright {
+            margin-left: 25%;
+            padding-left: 20px;
+            border-left: 1px solid grey;
+            margin-bottom: 40px;
+        }
+
+        pre {
+            white-space: pre-line;
+            padding-left: 30px;
+            color: grey;
+        }
+
+        footer {
+            border-top: 1px solid grey;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p id="title">BE THOUGHTFUL</p>
+        <nav>
+            <ol>
+                <li><a href="https://www.coolmathgames.com">Home</a></li>
+                <li><a href="https://www.abc.com">Featured</a></li>
+                <li><a href="https://www.edf.com">Archive</a></li>
+                <li><a href="https://www.aaa.com">Q&A</a></li>
+                <li><a href="https://www.bbb.com">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Believe in the power of your own thoughts</h1>
+
+        <section class="sectionleft">
+            <header>
+                <h4>Using a single Paragraph</h4>
+                By <p class="inlineGrey">Jane Doe (<a href="https://www.google.com">jdoe@expample.com</a>)</p> on<p
+                    class="inlineGrey"> May 14, 2009</p>
+
+            </header>
+            <div class="articleleft"> <!--inorder to be a article, it needs to have a header, which the section element has, it will not work having 2 headers in one section, so the article will become now a div. this is a warning pop-up in the valiador-->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque impedit nostrum voluptatum
+                obcaecati quos tenetur accusamus numquam, nemo, velit animi minus nisi quaerat. Accusantium qui ut
+                similique quibusdam q! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit
+                assumenda sed ab perspiciatis facilis iusto beatae vero porro! Totam dolore libero soluta consectetur
+                minus tempora magnam, distinctio tenetur doloremque!
+            </div>
+        </section>
+
+        <section class="sectionright">
+            <header>
+                <h4>Nesting different kind of lists</h4>
+                By <p class="inlineGrey">Mark Smith (<a href="https://www.bing.com">msmith@expample.com</a>)</p> on<p
+                    class="inlineGrey"> 14 April, 2009</p>
+
+            </header>
+
+            <div class="article2">
+                <p>Start with an unordered list:</p>
+                <ul>
+                    <li>Here is the first item by itself</li>
+                    <li>Here is a list item with a nested ordered list</li>
+                    <li class="last">
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. numquam omnis </li>
+                            <li>Autem dolorum a saepe minima architecto, itaque est exercitationem incidunt repudiandae
+                                laboriosam praesentium, </li>
+                            <li>ratione delectus earum nostrum enim voluptate perspiciatis.</li>
+                        </ol>
+                    </li>
+                    <li>Another list item by itself</li>
+                    <li>An item list with a nested discription list:</li>
+                    <li class="last">
+                        <dl>
+                            <dt>Dream</dt>
+                            <dd>Lorem ipsum dolor sit amet, cocing elit. Quae, veniam libero est sunt earum!</dd>
+                            <dt>Ideas</dt>
+                            <dd>Lorem ipsum dolor sit amet, consectetur adipanditiis nisi facilis,</dd>
+                            <dt>Thoughts</dt>
+                            <dd>sapiente voluptatum cupiditate estinctio rem.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sectionleft">
+            <header>
+                <h4>With Blockquotes and code blocks</h4>
+                By <p class="inlineGrey">Adam Smith (<a href="https://www.duckduckgo.com">adams@expample.com</a>) </p> on
+                <p class="inlineGrey"> 23 February, 2009</p>
+            </header>
+
+            <div class="articleleft">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias aliquid distinctio fugit
+                voluptas,
+                <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, quo! Quo vel odio
+                    architecto delectus voluptatem commodi, perspiciatis quos facere consequatur oloremque voluptatibus
+                    impedit nesciunt sapiente hic molestias numquam! A.</blockquote>
+                itaque asperiores eveniet ut adipisci pariatur ex voluptate dolore voluptatem perspiciatis odio tenetur
+                dignissimos magnam neque!
+                <pre>
+                    #include &lt;iostream&gt;
+                   using namespace std;
+                   int main(){
+                    cout &lt;&lt; "Hello World" &lt;&lt; endl;
+                   }
+                   return 0;
+            </pre>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; All Rights Reserved - 2022</p>
+    </footer>
+
+</body>
+
+</html>

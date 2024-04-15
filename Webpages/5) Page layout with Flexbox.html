@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Example 03</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: A starter project for ...">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <style>
+    body{
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 100%;
+}
+
+.subheader{
+    color: grey;
+    font-size: 24px;; 
+    margin: 4px 0px;
+    font-weight: bold;
+}
+
+.subauthor{
+    color: grey;
+    margin-top: 1px;
+}
+
+footer{
+    background-color: grey;
+    color: white;
+}
+
+.first-post-box > img{
+    border-radius: 20px;
+}
+
+.second-post-box{
+    border-top: solid grey 2px;
+    padding-top: 10px;
+}
+.first-post-box{
+    margin-bottom: 20px;
+}
+
+.second-post-box > img{
+    border-radius: 20px;
+}
+
+
+@media all and (min-width: 500px){
+    .titleheader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    form{
+        margin: 20px;
+        background-color: lightgrey;
+        padding: 11px 100px;
+        border-radius: 30px;
+        color: grey;
+    }
+    main{
+        margin: 0% 10%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: lightgrey;
+        margin-bottom: 10px;
+    }
+
+    header > nav > ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    header > nav > ul > li{
+        padding: 0 10px;
+        color: orange;
+    }
+    .right{
+      width: 30%;
+        background-color: lightgrey;
+        padding: 12px 12px 100px 12px;;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    .left{
+      width: 70%;
+    }
+
+    .first-post-box{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-post-box > div{
+        width: 75%;
+        margin-left: 10px;
+
+    }
+    .first-post-box > img{
+        width: 25%; 
+        aspect-ratio: 1/1;
+        object-fit:cover;
+        margin: 10px;
+
+    }
+
+    .second-post-box{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .second-post-box > div{
+        width: 75%;
+        margin-left: 10px;
+
+    }
+    .second-post-box > img{
+        width: 25%; 
+        aspect-ratio: 1/1;
+        object-fit:cover;
+        margin: 10px;
+
+    }
+    footer{
+        display: flex;
+        margin-top: 15px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 15px;
+    }
+
+    footer>div>ul{
+        display: flex;
+        list-style: none;
+    }
+    footer>div>ul>li{
+        padding-right: 15px;
+    }
+    .button{
+      background-color: orange;
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: white;
+
+    }
+
+}
+
+@media all and (max-width: 400px){
+    .hid-4-mobile{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .first-post-box{
+        border-top: solid grey 2px;
+        padding-top: 15px;
+    }
+
+    .second-post-box{
+        padding-top: 15px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 12px;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="titleheader">
+      <h1>Bradon Barfuss</h1>
+      <form action="#" class="hid-4-mobile">
+        Type to Search
+      </form>
+    </div>
+    <nav class="hid-4-mobile">
+      <ul>
+        <li>Home</li>
+        <li>Recent Posts</li>
+        <li>Old posts</li>
+        <li>Contact us</li>
+        <li>About us</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="left">
+      <div class="first-post-box">
+        <img class="first-post-image"
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="a cool image">
+        <div class="1st-post-text-content">
+          <h4 class="subheader">First post with image</h4>
+          <p class="subauthor">By Adam Smith, Jan 1, 2021</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed quod.
+            Odit, quis quibusdam dignissimos provident et iure fugit incidunt, adipisci quaerat eius dolorum
+            temporibus explicabo fugiat quasi alias molestiae!</p>
+            <span class="hid-4-mobile button">Read More</span>
+        </div>
+      </div>
+
+      <div class="second-post-box">
+        <img class="second-post-image"
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+          alt="another cool image">
+        <div>
+          <h4 class="subheader">Second post with image</h4>
+          <p class="subauthor">By John Doe, Jan 1, 2021</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum itaque, quam magni natus iste illo, debitis,
+            placeat officiis saepe excepturi voluptates. Eos vitae aperiam illo molestias consequatur ipsum, libero
+            cumque?</p>
+            <span class="hid-4-mobile button">Read More</span>
+        </div>
+      </div>
+    </div>
+    <div class="right hid-4-mobile">
+      <div class="secondary-post-box">
+        <h4 class="subheader">Secondary content here</h4>
+        <img class="secondary-post-image"
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+          alt="another cool image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veritatis cupiditate! Beatae atque, autem
+          quisquam a aliquid repellat eligendi itaque? Minus ullam perferendis nesciunt? Fugit possimus perferendis vero
+          iure esse?</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="hid-4-mobile">
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Youtube</li>
+      </ul>
+    </div>
+    <div class="center">
+    &#169; All Rights Reserved
+  </div>
+  </footer>
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+
+</html>

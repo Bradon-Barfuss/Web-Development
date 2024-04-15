@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <title>Document</title>
+  <style>
+    :root{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+*, ::after, ::before{
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: lightblue;
+}
+.contact-form{
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0 8%;
+
+}
+
+.left{
+  flex: 3;
+  background-color: white;
+  margin: 20px 10px 20px 0px;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+.right{
+  flex: 7;
+  background-color: white;
+  margin: 20px 0px 20px 10px;;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  color: blue;
+}
+
+.right div{
+  margin: 0px 5px 20px 10px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+input[type=email]{
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+input[name=message]{
+  width: 100%;
+  height: 200px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+
+
+input[name="uname"]{
+  border: 2px solid lightgreen;
+}
+
+input[name="email"]{
+  border: 2px solid red;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+.colorblue{
+  color: blue;
+}
+
+.lightgreen{
+  font-size: .75rem;
+  color: lightgreen;
+}
+
+.red{
+  font-size: .75rem;
+  color: red;
+}
+
+.bluebutton{
+  background-color: blue;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  color: white;
+}
+
+.greybutton{
+  background-color: grey;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: blue;
+}
+
+.left b{
+  font-size: 1.2rem;
+}
+header ul{
+  display: flex;
+  flex-direction: row;
+}
+header li{
+  margin-left: 10px;
+}
+
+#name{
+  color: black;
+  font-weight: bold;
+}
+
+header{
+  background-color: white;
+  padding: 1px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
+#underline-blue{
+  border-bottom: 2px solid blue;;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: .7rem;
+  text-align: center;;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li id="name">Bradon Barfuss</li>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Services</li>
+        <li id="underline-blue">Contact us</li>
+      </ul>
+      <ul>
+        <li>Sign in</li>
+        <li>Sign up</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <b>Main Menu</b>
+      <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Services</li>
+        <li>About Us</li>
+      </ul>
+      <b>Featured projects</b>
+      <ul>
+        <li>Project A</li>
+        <li>Project B</li>
+        <li>Project C</li>
+        <li>Project D</li>
+        <li>Project F</li>
+        <li>Project G</li>
+      </ul>
+    </div>
+    <div class="right">
+      <h1>Contact us Form</h1>
+      <form method="POST" class="contact-form">
+        <div class="field">
+          <label for="uname"><b>Name</b></label>
+          <input type="text" id="names" name="uname" placeholder="Type name here" required>
+        </div>
+        <div class="field">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" id="uname" name="uname" placeholder="Text input" required>
+          <span class="lightgreen">This username is avaliable</span>
+        </div>
+        <div class="field">
+          <label for="email"><b>Email</b></label>
+          <input type="email" id="email" name="email" placeholder="Email input" required>
+          <span class="red">This email is invalid</span>
+        </div>
+        <div>
+          <label><b>Are You a Member?</b></label>
+        <div class="field">
+          <input type="radio" id="member" name="status">
+          <label for="member">Yes</label>
+          <input type="radio" id="members" name="status">
+          <label for="member">No</label>
+        </div>
+        </div>
+        
+        <div class="field">
+          <label for="names"><b>Message</b></label>
+          <textarea>Textarea</textarea>
+        </div>
+        <div class="field">
+          <input type="checkbox" id="terms" name="terms">
+          <label for="terms">I agree to the <span class="colorblue">terms and conditions</span></label>
+        </div>
+        <span class="bluebutton">Submit</span>
+        <span class="greybutton">Cancel</span>
+      </form>
+    </div>
+  </div>
+  <footer>
+    &copy; 2021 - 2350 - All rights reserved
+  </footer>
+</body>
+
+</html>

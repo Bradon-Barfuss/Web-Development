@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="Description" content="a cool page">
+    <title>A pretty cool title</title>
+
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .pink {
+      color: #FF7F50;
+    }
+
+    .circle {
+      float: left;
+      width: 150px;
+      height: 150px;
+      background-color: black;
+      color: white;
+      border-radius: 75px;
+      text-align: center;
+      margin: .5rem;
+      font-size: 24px;
+    }
+
+    .circle::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .become-inline {
+      float: left;
+      display: inline;
+    }
+
+    body>header {
+      border-bottom: 1px solid grey;
+    }
+
+    nav>ul {
+      list-style: none;
+      padding-left: 0px;
+      float: left;
+      display: inline-block;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+
+    nav li {
+      display: inline;
+      color: #FF7F50;
+      padding: 3px;
+    }
+
+    .pull-right {
+      float: right;
+    }
+
+    .style-box-grey {
+      width: 25%;
+      background-color: grey;
+      color: white;
+      padding: 10px;
+    }
+
+    .style-box-black {
+      width: 50%;
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+
+    .box-section {
+      display: table;
+    }
+
+    .box-section .col {
+      display: table-cell;
+    }
+
+    img {
+      width: 50%;
+      border-radius: 30px;
+      padding: 10px;
+      float: left;     
+    }
+
+    div.secondary-heading {
+      margin-left: 10px;
+    }
+
+    div.secondary-heading h2 {
+      margin-bottom: 5px;
+    }
+
+    main {
+      margin-left: 65px;
+      margin-right: 65px;
+    }
+
+    #black {
+      color: black;
+    }
+
+    footer {
+      border-top: 1px solid grey;
+      padding: 5px 0px;
+    }
+
+    .table-article {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="clearfix">
+      <ul>
+        <li id="black"><b>Floated Menus: </b></li>
+        <li>One</li>
+        <li>Two</li>
+
+      </ul>
+      <ul class="pull-right">
+        <li>Three</li>
+        <li>Four</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+
+        <h2><span class="pink">&lt;Article 1&gt;:</span> Wrapping text aroung and image</h2>
+      </header>
+      <div class="clearfix">
+        <img src="https://i.pcmag.com/imagery/articles/01eGstfLC8DcJFtCbjOVe69-12..v1623096915.jpg"
+          alt="a cool picture">
+        <div class="secondary-heading">
+          <h2>A secondary Heading</h2>
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus corporis voluptatibus sit, eum ipsa impedit
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto quaerat perferendis at nam alias quis
+          nobis nemo eveniet sint a atque tempora dolorum, quae neque voluptatem voluptatum illum enim.lorem Lorem ipsum
+          dolor sit, amet consectetur adipisicing elit. Laudantium fugit magnam minus numquam deleniti dolorum corrupti
+          tenetur, tempore pariatur animi, sint accusantium necessitatibus incidunt quib hic id asperiores culpa facilis
+          officia.
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h2><span class="pink">&lt;Article 2&gt;:</span> Centering text vertically</h2>
+      </header>
+      <div class="wrapper clearfix">
+
+        <div class="circle">
+          Selectors
+        </div>
+        <div class="circle">
+          Inheritance
+        </div>
+        <div class="circle">
+          Cascade
+        </div>
+        <div class="circle">
+          Specificity
+        </div>
+
+      </div>
+    </article>
+
+    <article class="table-article">
+        <header>
+      <h2><span class="pink">&lt;Article 3&gt;:</span> Equal-height columns</h2>
+      </header>
+      <div class="box-section clearfix">
+        <div class="style-box-grey col">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum odit sint odio maxime at, am quod enim
+          consequuntur sunt ut numquam vitae repellat.
+        </div>
+        <div class="style-box-black col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores earum adipisci deserunt dicta
+          ducimus culpa illo fugiat accusantium eos itaque neque odit sint, hic quidem? Est omnis odio atque. fuga quis,
+          architecto repellendus nihil aspernatur aliquam mollitia quibusdam nam facere, voluptate, explicabo ullam
+          libero! Accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil est minima quibusdam
+          aliquid perfere
+        </div>
+        <div class="style-box-grey col">
+          Lorem ipsum dolor sit ame t consectetur adipisicing elit. Harum nemo quod excepturi velit debitis ndis natus
+          placeat eum minus quae atque, saepe ipsum esse? Neque minus blanditiis placeat laboriosam odio dolor.
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <b>Bradon Barfuss</b>
+    <span class="pull-right">&copy;All rights reserved</span>
+  </footer>
+  <div class="top">
+  </div>
+</body>
+
+</html>

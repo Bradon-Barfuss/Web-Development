@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="Description" content="a cool page">
+    <title>A pretty cool title</title>
+  <style>
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    main {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    body>header {
+      background-color: lightgray;
+      margin: 0px;
+    }
+
+
+    /*section 2 */
+
+    .col>h4 {
+      padding: 0px 10px;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+
+    .col>p {
+      padding: 0px 10px;
+      color: grey;
+      font-size: 15px;
+    }
+
+    body>header {
+      margin: 0px;
+    }
+
+    nav {
+      display: inline;
+    }
+
+    ul.headerUl {
+      padding-left: 5px;
+      padding-right: 15px;
+      display: inline-block;
+    }
+
+    .pull-right {
+      float: right;
+    }
+
+    li {
+      display: inline;
+      list-style: none;
+      color: #FF7F50;
+      padding-left: 8px;
+    }
+
+    li#underline {
+      padding-left: 0px;
+      padding-bottom: 2px;
+      border-bottom: 2px solid #FF7F50;
+    }
+
+    /*section 1*/
+    section.section1 {
+      margin-bottom: 30px;
+    }
+
+    .section-1-text {
+      width: 50%;
+      float: left;
+    }
+
+    .section-1-p {
+      color: grey;
+      margin-bottom: 25px;
+    }
+
+    .youtube {
+      width: 45%;
+      float: right;
+      margin-top: 30px;
+    }
+
+    .youtube-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .youtube-embed iframe {
+      position: absolute;
+      border: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /*section 2 */
+
+    .box-section {
+      display: flex;
+    }
+
+    .box-section .col {
+      width: 30%;
+      margin-right: 3%;
+      border: 1px solid grey;
+    }
+
+    .section-2-image {
+      width: 100%;
+    }
+
+    .col>h4 {
+      padding: 0px 10px;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+
+    .col>p {
+      padding: 0px 10px;
+      color: grey;
+      font-size: 15px;
+    }
+
+    a {
+      margin-top: 50px;
+      background-color: #FF7F50;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .section-2-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+
+    /* footer box*/
+
+    .section3 {
+      background-color: #555555;
+      margin-top: 85px;
+        padding-bottom: 20px;
+    }
+
+    .footer-box {
+      width: 5%;
+      float: left;
+      margin-right: 20%
+    }
+
+    .footer-box li {
+      float: left;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .li-header {
+      color: white;
+      margin-left: -15px;
+      font-size: 20px;
+    }
+    .main-footer{
+      margin:0% 15%
+    }
+    .color-black{
+      color:black;
+    }
+
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <div class="wrapper">
+      Utah Mighty <b>Five</b>
+      <nav class="clearfix">
+        <ul class="headerUl">
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+          <li>Five</li>
+        </ul>
+        <ul class="headerUl pull-right">
+          <li id="underline">Login</li>
+          <li>Account</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section1 clearfix">
+      <div class="section-1-text">
+        <h1>
+          Close your Eyes and Open your mind
+        </h1>
+        <p class="section-1-p">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat sunt vitae incidunt similique debitis,
+          in tenetur, unde ut dolorem tempore ex perspiciatis nemo reprehenderit explicabo eaque libero commodi
+          eos ab?
+        </p>
+        <a>Take a Tour</a>
+        <a>Start a Free Trial</a>
+      </div>
+
+      <div class="youtube">
+        <div class="youtube-embed">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/b_T8zfMsqqM" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="section-2">
+      <header>
+        <h2>What are they?</h2>
+      </header>
+      <section class="box-section">
+        <div class="sec2-box col">
+          <img class="section-2-image"
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+            alt="a cool image">
+          <h4>Bryce Canyon National Park</h4>
+          <p class="section-2-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, sed quod.
+            Odit, quis quibusdam dignissimos provident et iure fugit incidunt, adipisci quaerat eius dolorum
+            temporibus explicabo fugiat quasi alias molestiae!</p>
+        </div>
+        <div class="sec2-box col">
+          <img class="section-2-image"
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt="another cool image">
+          <h4>Zion National park</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum itaque, quam magni natus iste
+            illo, debitis, placeat officiis saepe excepturi voluptates. Eos vitae aperiam illo molestias
+            consequatur ipsum, libero cumque?</p>
+        </div>
+        <div class="sec2-box col">
+          <img class="section-2-image"
+            src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="Another another very cool image">
+          <h4>Aches National Park</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium laudantium rem ut!
+            Reprehenderit eveniet nisi, distinctio pariatur quam ab cumque placeat officia ipsa incidunt ut
+            sint officiis atque veniam odio.</p>
+        </div>
+      </section>
+      <div class="section-2-button"><a>Remaining Two</a></div>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <div class="section3">
+      <div class="section-box clearfix">
+        <div class="footer-box">
+          <ul>
+            <li class="li-header">Office</li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <ul>
+            <li class="li-header">Links</li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <ul>
+            <li class="li-header">Contacts</li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <ul>
+            <li class="li-header">Locations</li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+          </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="main-footer">
+      <div class="wrapper">
+        <nav class="clearfix">
+          <ul class="headerUl">
+            <li>Legal</li>
+            <li>Partner</li>
+            <li>Explore</li>
+          </ul>
+          <ul class="headerUl pull-right">
+            <li class="color-black">&#169; <b>All Rights Reserved</b>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
