@@ -1,0 +1,27 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+body{
+    background-color: #0A192F;
+}
+
+
+.cool-blue{
+    color: #79F4DB;
+}
+
+.lightblue{
+    background-color: #79F4DB;
+}
+
+.mainsection{
+    max-width: 800px;
+    font-family: Georgia, serif;
+    font-size: 1.5rem
+}
+
+#title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
