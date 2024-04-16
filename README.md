@@ -17,6 +17,10 @@ Experience a visually stunning responsive image gallery that dynamically adjusts
 
 ![Responsive Image Gallery](https://github.com/Bradon-Barfuss/Web-Development/raw/main/8%29%20Responsive%20Image%20Gallery/bird%20image%201.png)
 
+## Coloring sky with JavaScript
+Have fun in a engaging website that enables users to color the canvas with diferent colors and and clouds. Color the world with the power of javascript.
+![JavaScript Canvas](https://github.com/Bradon-Barfuss/Web-Development/raw/main/7%29%202D%20canvas%20graphics%20scene/Javascript%20image.png)
+
 ## Forms Application
 Engage with a user-friendly form application designed to gather user input with built-in validation checks. Simplify data collection processes while ensuring data accuracy and integrity.
 
