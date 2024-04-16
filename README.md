@@ -27,4 +27,4 @@ Delve into a captivating computer science-themed website providing insights into
 
 ![Computer Science Themed Website](https://github.com/Bradon-Barfuss/Web-Development/raw/main/10%29%20Class%20Project/class%20project%20image.png)
 
-Explore these projects and more to witness the intersection of creativity and technical expertise in web development!
+Explore these projects and more to my expertise in web development!
